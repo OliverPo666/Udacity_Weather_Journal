@@ -9,7 +9,7 @@ const example = "https://api.openweathermap.org/data/2.5/weather?zip={zip code}&
 const baseURI = "https://api.openweathermap.org/data/2.5/weather?zip=";
 const key = "&appid=c65724123b8285141e770eafaaa02c06&units=imperial";
 let d = new Date();
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+let newDate = d.getMonth() + 1 + '.' + d.getDate() + '.' + d.getFullYear();
 
 generateBtn.addEventListener("click", (e) => {
     e.preventDefault();
